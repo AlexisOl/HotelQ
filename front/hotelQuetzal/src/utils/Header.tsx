@@ -1,12 +1,6 @@
+import { Link } from "react-router-dom";
 import React from "react";
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-  Link,
-  Button,
-} from "@nextui-org/react";
+
 function Header() {
   return (
     <>
@@ -18,22 +12,33 @@ function Header() {
               alt="Logo Quetzal"
               className="h-20 w-20 mr-2"
             />
-            <a className="btn btn-ghost text-xl">Hotel del Quetzal</a>
+            <Link to="/" className="btn btn-ghost text-xl">
+              Hotel del Quetzal
+            </Link>
           </div>
           <div className="flex-none">
             <ul className="flex space-x-6 mr-4">
               <li>
-                <a className="text-white hover:text-emerald-300" href="#">
+                <a
+                  className="text-white hover:text-emerald-300"
+                  href="\historia"
+                >
                   Historia
                 </a>
               </li>
               <li>
-                <a className="text-white hover:text-emerald-300" href="#">
+                <a
+                  className="text-white hover:text-emerald-300"
+                  href="/habitaciones"
+                >
                   Habitaciones
                 </a>
               </li>
               <li>
-                <a className="text-white hover:text-emerald-300" href="#">
+                <a
+                  className="text-white hover:text-emerald-300"
+                  href="/galeria"
+                >
                   Galería
                 </a>
               </li>

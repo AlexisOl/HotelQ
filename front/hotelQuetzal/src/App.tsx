@@ -1,28 +1,60 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-  Link,
-  Button,
-} from "@nextui-org/react";
 import Principal from "./paginas/Principal";
 import Header from "./utils/Header";
 import Footer from "./utils/Footer";
 import VistaImagenes from "./utils/VistaImagenes";
 import Ubicacione from "./utils/Ubicacione";
+import { Routes, Route } from "react-router-dom";
+import Historia from "./paginas/Historia";
+import Habitaciones from "./paginas/Habitaciones";
+import Galeria from "./paginas/Galeria";
 function App() {
   return (
     <>
-      <Header />
-      <VistaImagenes />
-      <Principal />
-      <Ubicacione />
-      <Footer />
+      <Routes>
+        <Route
+          index
+          element={
+            <>
+              <Header />
+              <VistaImagenes />
+              <Principal />
+              <Ubicacione />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path={"/historia"}
+          element={
+            <div>
+              <Header />
+
+              <Historia />
+            </div>
+          }
+        />
+        <Route
+          path={"/habitaciones"}
+          element={
+            <div>
+              <Header />
+
+              <Habitaciones />
+            </div>
+          }
+        />
+        <Route
+          path={"/galeria"}
+          element={
+            <div>
+              <Header />
+
+              <Galeria />
+            </div>
+          }
+        />
+      </Routes>
     </>
   );
 }
