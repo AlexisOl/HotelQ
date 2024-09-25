@@ -1,117 +1,130 @@
 import React from "react";
-import { Card, CardHeader, CardFooter, Image, Button } from "@nextui-org/react";
+import { Card, CardHeader, Image } from "@nextui-org/react";
+
+// Datos de las imágenes
+const imageData = [
+  {
+    id: 1,
+    title: "What to watch",
+    description: "Stream the Acme event",
+    src: "https://storage.googleapis.com/imageneshotel/img/WhatsApp%20Image%202024-09-24%20at%2012.24.49%20PM.jpeg",
+    footer: false,
+  },
+  {
+    id: 2,
+    title: "Plant a tree",
+    description: "Contribute to the planet",
+    src: "https://storage.googleapis.com/imageneshotel/img/WhatsApp%20Unknown%202024-09-24%20at%202.02.30%20PM/WhatsApp%20Image%202024-09-24%20at%201.55.04%20PM%20(3).jpeg",
+    footer: false,
+  },
+  {
+    id: 3,
+    title: "Supercharged",
+    description: "Creates beauty like a beast",
+    src: "https://storage.googleapis.com/imageneshotel/img/WhatsApp%20Unknown%202024-09-24%20at%202.02.30%20PM/WhatsApp%20Image%202024-09-24%20at%201.55.06%20PM%20(5).jpeg",
+    footer: false,
+  },
+  {
+    id: 4,
+    title: "New",
+    description: "Acme camera",
+    src: "https://storage.googleapis.com/imageneshotel/img/WhatsApp%20Unknown%202024-09-24%20at%202.02.30%20PM/WhatsApp%20Image%202024-09-24%20at%201.55.04%20PM.jpeg",
+    footer: true,
+    button: "Notify Me",
+    footerText: "Available soon. Get notified.",
+  },
+  {
+    id: 5,
+    title: "Your day your way",
+    description: "Your checklist for better sleep",
+    src: "https://storage.googleapis.com/imageneshotel/img/WhatsApp%20Unknown%202024-09-24%20at%202.02.30%20PM/WhatsApp%20Image%202024-09-24%20at%201.55.05%20PM%20(4).jpeg",
+    footer: true,
+    button: "Get App",
+    footerText: "Breathing App. Get a good night's sleep.",
+    footerIcon: "https://nextui.org/images/breathing-app-icon.jpeg",
+  },
+  {
+    id: 6,
+    title: "What to watch",
+    description: "Stream the Acme event",
+    src: "https://storage.googleapis.com/imageneshotel/img/WhatsApp%20Unknown%202024-09-24%20at%202.02.30%20PM/WhatsApp%20Image%202024-09-24%20at%201.55.05%20PM%20(2).jpeg",
+    footer: false,
+  },
+  {
+    id: 7,
+    title: "What to watch",
+    description: "Stream the Acme event",
+    src: "https://storage.googleapis.com/imageneshotel/img/WhatsApp%20Unknown%202024-09-24%20at%202.02.30%20PM/WhatsApp%20Image%202024-09-24%20at%201.55.05%20PM.jpeg",
+    footer: false,
+  },
+  {
+    id: 8,
+    title: "What to watch",
+    description: "Stream the Acme event",
+    src: "https://storage.googleapis.com/imageneshotel/img/WhatsApp%20Unknown%202024-09-24%20at%202.02.30%20PM/WhatsApp%20Image%202024-09-24%20at%201.55.06%20PM%20(3).jpeg",
+    footer: false,
+  },
+  {
+    id: 9,
+    title: "What to watch",
+    description: "Stream the Acme event",
+    src: "https://storage.googleapis.com/imageneshotel/img/WhatsApp%20Unknown%202024-09-24%20at%202.02.30%20PM/WhatsApp%20Image%202024-09-24%20at%201.55.07%20PM%20(1).jpeg",
+    footer: false,
+  },
+  {
+    id: 10,
+    title: "What to watch",
+    description: "Stream the Acme event",
+    src: "https://storage.googleapis.com/imageneshotel/img/imagenInterior.png",
+    footer: false,
+  },
+  {
+    id: 11,
+    title: "What to watch",
+    description: "Stream the Acme event",
+    src: "https://storage.googleapis.com/imageneshotel/img/WhatsApp%20Image%202024-09-24%20at%206.30.19%20PM.jpeg",
+    footer: false,
+  },
+  //
+];
+
 function Galeria() {
   return (
-    <div className="max-w-[900px] gap-2 grid grid-cols-12 grid-rows-2 px-8">
-      <Card className="col-span-12 sm:col-span-4 h-[300px]">
-        <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-          <p className="text-tiny text-white/60 uppercase font-bold">
-            What to watch
-          </p>
-          <h4 className="text-white font-medium text-large">
-            Stream the Acme event
-          </h4>
-        </CardHeader>
-        <Image
-          removeWrapper
-          alt="Card background"
-          className="z-0 w-full h-full object-cover"
-          src="https://nextui.org/images/card-example-4.jpeg"
-        />
-      </Card>
-      <Card className="col-span-12 sm:col-span-4 h-[300px]">
-        <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-          <p className="text-tiny text-white/60 uppercase font-bold">
-            Plant a tree
-          </p>
-          <h4 className="text-white font-medium text-large">
-            Contribute to the planet
-          </h4>
-        </CardHeader>
-        <Image
-          removeWrapper
-          alt="Card background"
-          className="z-0 w-full h-full object-cover"
-          src="https://nextui.org/images/card-example-3.jpeg"
-        />
-      </Card>
-      <Card className="col-span-12 sm:col-span-4 h-[300px]">
-        <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-          <p className="text-tiny text-white/60 uppercase font-bold">
-            Supercharged
-          </p>
-          <h4 className="text-white font-medium text-large">
-            Creates beauty like a beast
-          </h4>
-        </CardHeader>
-        <Image
-          removeWrapper
-          alt="Card background"
-          className="z-0 w-full h-full object-cover"
-          src="https://nextui.org/images/card-example-2.jpeg"
-        />
-      </Card>
-      <Card
-        isFooterBlurred
-        className="w-full h-[300px] col-span-12 sm:col-span-5"
-      >
-        <CardHeader className="absolute z-10 top-1 flex-col items-start">
-          <p className="text-tiny text-white/60 uppercase font-bold">New</p>
-          <h4 className="text-black font-medium text-2xl">Acme camera</h4>
-        </CardHeader>
-        <Image
-          removeWrapper
-          alt="Card example background"
-          className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-          src="https://nextui.org/images/card-example-6.jpeg"
-        />
-        <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
-          <div>
-            <p className="text-black text-tiny">Available soon.</p>
-            <p className="text-black text-tiny">Get notified.</p>
-          </div>
-          <Button className="text-tiny" color="primary" radius="full" size="sm">
-            Notify Me
-          </Button>
-        </CardFooter>
-      </Card>
-      <Card
-        isFooterBlurred
-        className="w-full h-[300px] col-span-12 sm:col-span-7"
-      >
-        <CardHeader className="absolute z-10 top-1 flex-col items-start">
-          <p className="text-tiny text-white/60 uppercase font-bold">
-            Your day your way
-          </p>
-          <h4 className="text-white/90 font-medium text-xl">
-            Your checklist for better sleep
-          </h4>
-        </CardHeader>
-        <Image
-          removeWrapper
-          alt="Relaxing app background"
-          className="z-0 w-full h-full object-cover"
-          src="https://nextui.org/images/card-example-5.jpeg"
-        />
-        <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
-          <div className="flex flex-grow gap-2 items-center">
-            <Image
-              alt="Breathing app icon"
-              className="rounded-full w-10 h-11 bg-black"
-              src="https://nextui.org/images/breathing-app-icon.jpeg"
-            />
-            <div className="flex flex-col">
-              <p className="text-tiny text-white/60">Breathing App</p>
-              <p className="text-tiny text-white/60">
-                Get a good night's sleep.
-              </p>
-            </div>
-          </div>
-          <Button radius="full" size="sm">
-            Get App
-          </Button>
-        </CardFooter>
-      </Card>
+    <div className="max-w-[1900px]  m-4 gap-2 grid grid-cols-12 grid-rows-2 px-8">
+      {imageData.map((image, index) => (
+        <Card
+          key={index}
+          className={`${
+            image.id === 4
+              ? "col-span-12 sm:col-span-5"
+              : image.id === 5
+              ? "col-span-12 sm:col-span-7"
+              : image.id === 6 ||
+                image.id === 7 ||
+                image.id === 8 ||
+                image.id === 9
+              ? "col-span-12 sm:col-span-3"
+              : image.id === 10
+              ? "col-span-12 sm:col-span-8"
+              : "col-span-12 sm:col-span-4"
+          } h-[450px]`}
+        >
+          <CardHeader className="absolute z-10 top-1 flex-col !items-start">
+            <p className="text-tiny text-white/60 uppercase font-bold">
+              {image.title}
+            </p>
+            <h4 className="text-white font-medium text-large">
+              {image.description}
+            </h4>
+          </CardHeader>
+          <Image
+            removeWrapper
+            alt={`Image ${index + 1}`}
+            className="z-0 w-full h-full object-cover"
+            src={image.src}
+          />
+        </Card>
+      ))}
     </div>
   );
 }

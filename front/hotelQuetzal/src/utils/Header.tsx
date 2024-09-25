@@ -5,7 +5,7 @@ function Header() {
   return (
     <>
       <div className="flex justify-between dow-lg p-4">
-        <div className="navbar bg-emerald-500 text-primary-content rounded-box">
+        <div className="navbar bg-[#8FBC8F] text-primary-content rounded-box">
           <div className="flex-1 flex items-center">
             <img
               src="https://images.vexels.com/content/229291/preview/quetzal-guatemala-cut-out-b922bb.png"

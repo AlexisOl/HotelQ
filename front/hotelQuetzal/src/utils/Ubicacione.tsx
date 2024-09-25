@@ -36,12 +36,14 @@ function Ubicacione() {
             />
           </GoogleMap>
         </div>
-        <div className="w-1/3 p-4">
+        <div className="w-1/3 p-4 flex flex-col items-center">
           <h2 className="text-xl font-bold">Información del Hotel</h2>
+          <hr className="w-48 h-1 mx-auto my-4 bg-gray-800 border-0 rounded md:my-10 dark:bg-gray-800" />
           <p>
-            Aquí puedes incluir detalles sobre el Hotel del Quetzal, como su
-            historia, servicios, y más.
+            Nos econtramos ubicados en el centro historico de Quetzalantenango,
+            Guatemala.
           </p>
+          <p>La direccion es 13 avenida 3-27 zona 1, a </p>
         </div>
       </div>
     </div>

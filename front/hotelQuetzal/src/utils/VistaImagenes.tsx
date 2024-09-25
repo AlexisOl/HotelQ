@@ -2,36 +2,41 @@ import React from "react";
 
 function VistaImagenes() {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center mx-auto mt-10 mb-10">
       <div className="carousel rounded-box">
         <div className="carousel-item">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
+            src="https://storage.googleapis.com/imageneshotel/img/WhatsApp%20Unknown%202024-09-24%20at%202.02.30%20PM/WhatsApp%20Image%202024-09-24%20at%201.55.03%20PM%20(1).jpeg"
             alt="Burger"
+            width={"315px"}
           />
         </div>
         <div className="carousel-item">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
+            src="https://storage.googleapis.com/imageneshotel/img/WhatsApp%20Image%202024-09-24%20at%202.57.23%20PM.jpeg"
             alt="Burger"
+            width={"315px"}
           />
         </div>
         <div className="carousel-item">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp"
+            src="https://storage.googleapis.com/imageneshotel/img/WhatsApp%20Unknown%202024-09-24%20at%202.02.30%20PM/WhatsApp%20Image%202024-09-24%20at%201.55.05%20PM.jpeg"
             alt="Burger"
+            width={"315px"}
           />
         </div>
         <div className="carousel-item">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp"
+            src="https://storage.googleapis.com/imageneshotel/img/imagen15.jpeg"
             alt="Burger"
+            width={"315px"}
           />
         </div>
         <div className="carousel-item">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp"
+            src="https://storage.googleapis.com/imageneshotel/img/WhatsApp%20Unknown%202024-09-24%20at%202.02.30%20PM/WhatsApp%20Image%202024-09-24%20at%201.55.03%20PM.jpeg"
             alt="Burger"
+            width={"315px"}
           />
         </div>
       </div>

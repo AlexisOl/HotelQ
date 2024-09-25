@@ -18,7 +18,9 @@ function App() {
             <>
               <Header />
               <VistaImagenes />
+              <div className="divider mx-auto mt-15"></div>
               <Principal />
+              <div className="divider"></div>
               <Ubicacione />
               <Footer />
             </>
@@ -31,6 +33,7 @@ function App() {
               <Header />
 
               <Historia />
+              <Footer />
             </div>
           }
         />
@@ -41,6 +44,7 @@ function App() {
               <Header />
 
               <Habitaciones />
+              <Footer />
             </div>
           }
         />
@@ -51,6 +55,7 @@ function App() {
               <Header />
 
               <Galeria />
+              <Footer />
             </div>
           }
         />

@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="footer p-10 bg-emerald-500 text-primary-content">
+    <footer className="footer p-10 bg-[#8FBC8F] text-primary-content">
       <div>
         <h2 className="font-bold text-xl">Hotel del Quetzal</h2>
         <p>&copy; {new Date().getFullYear()} Todos los derechos reservados</p>
