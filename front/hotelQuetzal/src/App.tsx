@@ -8,6 +8,9 @@ import { Routes, Route } from "react-router-dom";
 import Historia from "./paginas/Historia";
 import Habitaciones from "./paginas/Habitaciones";
 import Galeria from "./paginas/Galeria";
+import Carusel from "./paginas/Comentarios";
+import Comentarios from "./paginas/Comentarios";
+import Contacto from "./paginas/Contacto";
 function App() {
   return (
     <>
@@ -21,6 +24,9 @@ function App() {
               <div className="divider mx-auto mt-15"></div>
               <Principal />
               <div className="divider"></div>
+              <Comentarios />
+              <div className="divider"></div>
+
               <Ubicacione />
               <Footer />
             </>
@@ -55,6 +61,17 @@ function App() {
               <Header />
 
               <Galeria />
+              <Footer />
+            </div>
+          }
+        />
+        <Route
+          path={"/contacto"}
+          element={
+            <div>
+              <Header />
+
+              <Contacto />
               <Footer />
             </div>
           }

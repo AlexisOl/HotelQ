@@ -38,8 +38,11 @@ function Footer() {
       </div>
       <div>
         <span className="footer-title">Contacto</span>
-        <a className="link link-hover" href="mailto:info@hoteldelquetzal.com">
-          info@hoteldelquetzal.com
+        <a
+          className="link link-hover size-16"
+          href="mailto: hoteldelquetzal2024@gmail.com"
+        >
+          hoteldelquetzal2024@gmail.com
         </a>
         <p>Teléfono: +502 1234-5678</p>
       </div>
